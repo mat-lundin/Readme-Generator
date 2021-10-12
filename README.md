@@ -12,7 +12,7 @@
   
 
   ## License
-  https://img.shields.io/github/license/mat-lundin/undefined
+  undefined
 
   ## Contributing
   

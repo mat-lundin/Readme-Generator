@@ -3,6 +3,7 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
+let badgeUrl;
 
 // TODO: Create an array of questions for user input
 const questions = [{
@@ -58,11 +59,15 @@ function init() {
     inquirer
         .prompt (questions)
             .then((data) => {
-                generateMarkdown.renderLicenseBadge(data.repo)
-                console.log(generateMarkdown.renderLicenseBadge(data.repo))
+                // badgeUrl = `https://img.shields.io/github/license/mat-lundin/${data.repo}`
+                // gigenerateMarkdown.renderLicenseBadge(badgeUrl);
+                // console.log(generateMarkdown.renderLicenseBadge(data.repo))
                 writeToFile('readme.md',generateMarkdown.generateMarkdown(data));
             })
 };
+
+// export
+module.exports = {}
 
 
 // Function call to initialize app
