@@ -12,6 +12,11 @@ const questions = [{
 },
 {
     type: 'input',
+    message: 'Enter the name of the repo (copy and paste from github URL): ',
+    name: 'repo'
+},
+{
+    type: 'input',
     message: 'Enter a description: ',
     name: 'desc'
 },
@@ -28,7 +33,7 @@ const questions = [{
 {
     type: 'input',
     message: 'Who contributed to this repo?',
-    name: 'contributors'
+    name: 'contributing'
 },
 {
     type: 'input',
