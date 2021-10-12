@@ -1,1 +1,2 @@
-# Homework-6-Readme-Generator
+# Readme Generator
+
