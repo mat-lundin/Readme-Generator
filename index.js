@@ -58,7 +58,8 @@ function init() {
     inquirer
         .prompt (questions)
             .then((data) => {
-                writeToFile('readme.md',generateMarkdown(data));
+                generateMarkdown.renderLicenseBadge(data.repo)
+                writeToFile('readme.md',generateMarkdown.generateMarkdown(data));
             })
 };
 

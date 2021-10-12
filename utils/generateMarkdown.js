@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  return `https://img.shields.io/github/license/mat-lundin/${data.repo}`
+  return `https://img.shields.io/github/license/mat-lundin/${license}`
 }
 
 // TODO: Create a function that returns the license link
@@ -30,6 +30,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
+  ${renderLicenseBadge}
 
   ## Contributing
   ${data.contributing}
@@ -42,4 +43,5 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown,
+renderLicenseBadge};

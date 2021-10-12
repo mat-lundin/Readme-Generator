@@ -1,23 +1,26 @@
-# Readme Gen
+# readme gen
 
   ## Description
-  here is a description
+  
 
   ## Table of Contents
 
   ## Installation
-  here are the installation deets
+  
 
   ## Usage
-  here are the usage deets
+  
 
   ## License
+  function renderLicenseBadge(license) {
+  return `https://img.shields.io/github/license/mat-lundin/${license}`
+}
 
   ## Contributing
-  Mat Lundin
+  
 
   ## Tests
-  here are the tests details
+  
 
   ## Questions
-  here are the questions
+  
