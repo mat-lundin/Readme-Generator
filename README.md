@@ -1,4 +1,4 @@
-# readme gen
+# asdf
 
   ## Description
   
@@ -12,9 +12,7 @@
   
 
   ## License
-  function renderLicenseBadge(license) {
-  return `https://img.shields.io/github/license/mat-lundin/${license}`
-}
+  https://img.shields.io/github/license/mat-lundin/undefined
 
   ## Contributing
   

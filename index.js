@@ -59,9 +59,11 @@ function init() {
         .prompt (questions)
             .then((data) => {
                 generateMarkdown.renderLicenseBadge(data.repo)
+                console.log(generateMarkdown.renderLicenseBadge(data.repo))
                 writeToFile('readme.md',generateMarkdown.generateMarkdown(data));
             })
 };
+
 
 // Function call to initialize app
 init();
