@@ -69,8 +69,21 @@ const questions = [{
     name: 'questions'
 },
 {
+    type: 'list',
+    message: 'Do you have a screenshot?',
+    choices: ['No','Yes'],
+    name: 'imageYN'
+},
+{
     type: 'input',
     message: 'Enter the file path to your screenshot: ',
+    when: function () {
+        if (imageYN === 'Yes') {
+            return true
+        } else {
+            return false
+        }
+    },
     name: 'screenshot'
 },];
 
