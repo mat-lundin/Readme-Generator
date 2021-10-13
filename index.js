@@ -11,11 +11,11 @@ const questions = [{
     message: 'Enter a title: ',
     name: 'title'
 },
-{
-    type: 'input',
-    message: 'Enter the name of the repo (copy and paste from github URL): ',
-    name: 'repo'
-},
+// {
+//     type: 'input',
+//     message: 'Enter the name of the repo (copy and paste from github URL): ',
+//     name: 'repo'
+// },
 {
     type: 'input',
     message: 'Enter a description: ',
@@ -67,8 +67,8 @@ function init() {
             .then((data) => {
             
                 // badgeUrl = `https://img.shields.io/github/license/mat-lundin/${data.repo}`
-                repo = data.repo
-                generateMarkdown.renderLicenseBadge(repo);
+                // repo = data.repo
+                // generateMarkdown.renderLicenseBadge(repo);
                 // console.log(generateMarkdown.renderLicenseBadge(data.repo))
                 writeToFile('readme.md',generateMarkdown.generateMarkdown(data));
             })
