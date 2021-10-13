@@ -77,13 +77,8 @@ const questions = [{
 {
     type: 'input',
     message: 'Enter the file path to your screenshot: ',
-    when: function () {
-        if (imageYN === 'Yes') {
-            return true
-        } else {
-            return false
-        }
-    },
+    // help from https://javascript.plainenglish.io/how-to-inquirer-js-c10a4e05ef1f
+    when: (answers) => answers.imageYN === 'Yes',
     name: 'screenshot'
 },];
 

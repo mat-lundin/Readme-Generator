@@ -1,7 +1,7 @@
 # asdf
 
 ## Description
-  asdfasdf
+  asdf
 
 ## Table of Contents
 - [Installation](#installation)
@@ -33,7 +33,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
 
 ## Contributing
-me
+asdf
 
 ## Tests
 asdf
@@ -41,5 +41,5 @@ asdf
 ## Questions
 asdf
 
-You can access this repository [here.](https://github.com/mat-lundin/Homework-9-Readme-Generator)
-[![screenshot](./images/readmeGenScreenshot.png)]
+You can access this repository [here.](asdf)
+![screenshot](./images/readmeGenScreenshot.png)

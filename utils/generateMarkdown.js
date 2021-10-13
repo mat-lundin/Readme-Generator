@@ -60,7 +60,7 @@ function renderScreenshot(screenshot){
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log('data = ' + data.title)
+  // console.log('data = ' + data.title)
   return `# ${data.title}
 
 ## Description
