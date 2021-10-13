@@ -19,11 +19,11 @@ const questions = [{
     },
     name: 'title'
 },
-// {
-//     type: 'input',
-//     message: 'Enter the name of the repo (copy and paste from github URL): ',
-//     name: 'repo'
-// },
+{
+    type: 'input',
+    message: 'Enter the repository URL: ',
+    name: 'repo'
+},
 {
     type: 'input',
     message: 'Enter a description: ',
@@ -67,6 +67,11 @@ const questions = [{
     type: 'input',
     message: 'Enter Questions details: ',
     name: 'questions'
+},
+{
+    type: 'input',
+    message: 'Enter the file path to your screenshot: ',
+    name: 'screenshot'
 },];
 
 // TODO: Create a function to write README file

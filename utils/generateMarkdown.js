@@ -40,7 +40,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   } else {
     return '';
   }
-}
+};
+
+function renderRepoLink(repo){
+  if (repo) {
+    return `You can access this repository [here.](${repo})`;
+  } else {
+    return '';
+  };
+};
+
+function renderScreenshot(screenshot){
+  if (screenshot) {
+    return `[![screenshot](${screenshot})]`;
+  } else {
+    return '';
+  };
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -74,6 +90,8 @@ ${data.tests}
 
 ## Questions
 ${data.questions}
+
+${renderRepoLink(data.repo)}
 `;
 }
 
