@@ -52,7 +52,7 @@ function renderRepoLink(repo){
 
 function renderScreenshot(screenshot){
   if (screenshot) {
-    return `[![screenshot](${screenshot})]`;
+    return `![screenshot](${screenshot})`;
   } else {
     return '';
   };
@@ -92,6 +92,7 @@ ${data.tests}
 ${data.questions}
 
 ${renderRepoLink(data.repo)}
+${renderScreenshot(data.screenshot)}
 `;
 }
 
