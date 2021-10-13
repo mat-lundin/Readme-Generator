@@ -1,7 +1,7 @@
-# Node Readme Generator
+# asdf
 
 ## Description
-  This application will present the user with a number of prompts and use the responses to generate a readme.md file in the current directory.
+  asdf
 
 ## Table of Contents
 - [Installation](#installation)
@@ -12,10 +12,10 @@
 - [Questions](#questions)
 
 ## Installation
-To install, download the repository files and run ```npm i``` in the terminal from the root folder to install all dependencies (Inquirer in this case).
+
 
 ## Usage
-To use, run ```node index.js``` in the terminal and answer the prompts. The application will produce a readme.md file in the root folder. If there is already a readme.md file the application will replace it with the newly generated file.
+
 
 
 ## License
@@ -33,10 +33,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
 
 ## Contributing
-Mat Lundin built this application solo.
+
 
 ## Tests
-No tests were built for this application.
+
 
 ## Questions
-Any questions can be submitted to the developer via GitHub.
+

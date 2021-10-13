@@ -9,6 +9,14 @@ let repo;
 const questions = [{
     type: 'input',
     message: 'Enter a title: ',
+    validate: function(input){
+        if (input) {
+            return true
+        } else {
+            // console.log('Cannot be blank!')
+            return false
+        }
+    },
     name: 'title'
 },
 // {
@@ -19,6 +27,14 @@ const questions = [{
 {
     type: 'input',
     message: 'Enter a description: ',
+    validate: function(input){
+        if (input) {
+            return true
+        } else {
+            // console.log('Cannot be blank!')
+            return false
+        }
+    },
     name: 'desc'
 },
 {
