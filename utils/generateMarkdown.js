@@ -1,9 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  return license;
+  if (license === 'MIT') {
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+  } else {
+    return ''
+  }
   // return `https://img.shields.io/github/license/mat-lundin/${license}`
-}
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -23,6 +27,12 @@ function generateMarkdown(data) {
   ${data.desc}
 
   ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Installation
   ${data.install}
@@ -44,5 +54,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = {generateMarkdown,
-renderLicenseBadge};
+module.exports = {generateMarkdown};
