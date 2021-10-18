@@ -58,6 +58,15 @@ function renderScreenshot(screenshot){
   };
 };
 
+function renderDemoSection (url) {
+  if (url) {
+    return `## Demonstration Video
+    [View Demo](${url})`
+  } else {
+    return ``
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // console.log('data = ' + data.title)
@@ -90,6 +99,8 @@ ${data.tests}
 
 ## Questions
 ${data.questions}
+
+${renderDemoSection(data.videoUrl)}
 
 ${renderRepoLink(data.repo)}
 ${renderScreenshot(data.screenshot)}
