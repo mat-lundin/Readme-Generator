@@ -112,7 +112,7 @@ function init() {
                 // repo = data.repo
                 // generateMarkdown.renderLicenseBadge(repo);
                 // console.log(generateMarkdown.renderLicenseBadge(data.repo))
-                writeToFile('readme.md',generateMarkdown.generateMarkdown(data));
+                writeToFile('./readmeGen/readme.md',generateMarkdown.generateMarkdown(data));
             })
 };
 
