@@ -80,6 +80,19 @@ const questions = [{
     // help from https://javascript.plainenglish.io/how-to-inquirer-js-c10a4e05ef1f
     when: (answers) => answers.imageYN === 'Yes',
     name: 'screenshot'
+},
+{
+    type: 'list',
+    message: 'Do you have a demo video link?',
+    choices: ['No','Yes'],
+    name: 'videoYN'
+},
+{
+    type: 'input',
+    message: 'Enter the demo video URL: ',
+    // help from https://javascript.plainenglish.io/how-to-inquirer-js-c10a4e05ef1f
+    when: (answers) => answers.videoYN === 'Yes',
+    name: 'videoUrl'
 },];
 
 // TODO: Create a function to write README file
