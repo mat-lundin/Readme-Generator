@@ -61,7 +61,7 @@ function renderScreenshot(screenshot){
 function renderDemoSection (url) {
   if (url) {
     return `## Demonstration Video
-    [View Demo](${url})`
+[View Demo](${url})`
   } else {
     return ``
   }
