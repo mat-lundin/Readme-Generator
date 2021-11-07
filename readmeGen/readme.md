@@ -1,7 +1,7 @@
-# Readme File Gen
+# E-Commerce Backend
 
 ## Description
-  description
+  This project was to build the backend of an E-Commerce application. We built models for 3 tables and their relationships. We created routers for each type of request for each table: GET, POST, PUT, and DELETE.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -12,10 +12,10 @@
 - [Questions](#questions)
 
 ## Installation
-a;sdlfkjasdf
+To install, download the repository files and run ```npm i``` in the terminal from the root folder to install all dependencies. The database will need to be created and seeded by running the ```schema.sql``` file in MySQL and then running ```npm run seed``` in the terminal.
 
 ## Usage
-asdfasdfa
+To use, run ```npm start``` in the terminal. The server will start up and the user will be able to make requests to the server to manipulate the data in the database (using Insomnia for instance).
 
 
 ## License
@@ -33,16 +33,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
 
 ## Contributing
-me 
+The backend of this application was built by Mat Lundin.
 
 ## Tests
-No tests were built for this application
+No tests have been built for this application.
 
 ## Questions
-Any questions can be submitted to the developer via Github.
+Any questions can be submitted to the developer via GitHub.
 
 ## Demonstration Video
-(https://watch.screencastify.com/v/nd5chUSKdIMFoHUSbIYd)
+[View Demo](https://watch.screencastify.com/v/lirPRWJj8gJClQdcgc4N)
 
-You can access this repository [here.](https://martinfowler.com/bliki/TestDouble.html)
-![screenshot](./images/readmeGenScreenshot.png)
+You can access this repository [here.](https://github.com/mat-lundin/Homework-13-E-Commerce)
+![screenshot](./images/eCommerceScreenshot.png)
