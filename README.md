@@ -1,7 +1,7 @@
 # Readme File Gen
 
 ## Description
-  description
+  This application runs in the terminal, and will prompt the user for information. With that information it will generate a README file written in the Markdown language!
 
 ## Table of Contents
 - [Installation](#installation)
@@ -12,10 +12,12 @@
 - [Questions](#questions)
 
 ## Installation
-a;sdlfkjasdf
+To install, clone the repository to your local system. From the terminal, within the root folder, run `npm i` to install the dependency (in this case, Inquirer.js).
 
 ## Usage
-asdfasdfa
+To use the README generator, run `node index.js` from your terminal. From there, just answer the questions! Once all prompts are answered, the file will be generated in the `readmeGen` folder.
+
+If you wish you customize the prompts, you will need to edit the `questions` array in `index.js`. To then get the responses in your Markdown file, you will need to edit `/utils/generateMarkdown.js`.
 
 
 ## License
@@ -33,7 +35,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
 
 ## Contributing
-me 
+This application was developed by Mat Lundin
 
 ## Tests
 No tests were built for this application
