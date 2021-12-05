@@ -1,4 +1,4 @@
-# Readme File Gen
+# Readme File Generator
 
 ## Description
   This application runs in the terminal, and will prompt the user for information. With that information it will generate a README file written in the Markdown language!
