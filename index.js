@@ -3,9 +3,9 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
-// let repo;
 
-// TODO: Create an array of questions for user input
+
+// Create an array of questions for user input
 const questions = [{
     type: 'input',
     message: 'Enter a title: ',
@@ -13,7 +13,7 @@ const questions = [{
         if (input) {
             return true
         } else {
-            // console.log('Cannot be blank!')
+            
             return false
         }
     },
@@ -31,7 +31,6 @@ const questions = [{
         if (input) {
             return true
         } else {
-            // console.log('Cannot be blank!')
             return false
         }
     },
@@ -95,30 +94,20 @@ const questions = [{
     name: 'videoUrl'
 },];
 
-// TODO: Create a function to write README file
+// write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName,data, (err) => {
         err ? console.error(err) : console.log('Readme file generated!');
     })
 }
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
     inquirer
         .prompt (questions)
             .then((data) => {
-            
-                // badgeUrl = `https://img.shields.io/github/license/mat-lundin/${data.repo}`
-                // repo = data.repo
-                // generateMarkdown.renderLicenseBadge(repo);
-                // console.log(generateMarkdown.renderLicenseBadge(data.repo))
                 writeToFile('./readmeGen/readme.md',generateMarkdown.generateMarkdown(data));
             })
 };
 
-// // export
-// module.exports = {repo}
-
-
-// Function call to initialize app
 init();
